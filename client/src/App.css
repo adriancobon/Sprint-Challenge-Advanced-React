@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* The following is new code needed to make dark mode work */
+.dark-mode {
+  color: white;
+  background-color: black;
+}
