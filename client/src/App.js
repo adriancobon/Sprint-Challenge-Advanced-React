@@ -15,7 +15,7 @@ class App extends React.Component {
 
   // This pulls in the data from the server and adds it to the database.
   componentDidMount() {
-    fetch('http://localhost:5000/ap/players')
+    fetch('http://localhost:5000/api/players')
     .then(res => res.json())
     .then(data => this.setState( {players: data}));
   }
@@ -48,7 +48,7 @@ function Soccer(props) {
   return (
     <div>
       <button onClick={toggleMode}>Change Color</button>
-      {props.players.map(player => (<div key={player.id}>{player.id}{player.name}{player.country}{player.searches}</div>))}
+      {props.players.map(player => (<div key={player.id}>{player.id} {player.name} {player.country} {player.searches}</div>))}
     </div>
   );
 }
