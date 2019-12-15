@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 // I know I will need local storage in a hot sec, so creating it now...
 import useLocalStorage from './useLocalStorage';
 
-cont useDarkMode = (initialValue) => {
+// remember to spell const correctly... caused a nasty hickup in initial draft.
+const useDarkMode = (initialValue) => {
     const [darkMode, setDarkMode] = useLocalStorage('dark-mode', initialValue);
     useEffect (() => {
         if (darkMode) {

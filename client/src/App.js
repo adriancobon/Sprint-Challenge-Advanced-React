@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// The following brings in the hook needed to make darkMode work.
+import useDarkMode from './hooks/useDarkMode'
 
 class App extends React.Component {
   // This creates the default player database.
@@ -39,7 +41,7 @@ function Soccer(props) {
   // changes the state of darkmode when toggleMode is triggered
   const toggleMode = e => {
     e.preventDefault();
-    setDarkMode(!darkmode);
+    setDarkMode(!darkMode);
   }
 
 // The following creates the basic interface for the app. The first one is a button to change the background color. The second shows the player information.
