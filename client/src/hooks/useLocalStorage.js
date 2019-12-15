@@ -1,4 +1,4 @@
-// The following creates the useLocalStorage segment, which is heavily used in setting state and value.
+// The following creates the useLocalStorage segment, which is heavily used in setting state and value for the useDarkMode hook.
 import { useState } from 'react';
 
 const useLocalStorage = (key, initialValue) => {
